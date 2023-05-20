@@ -1,0 +1,44 @@
+*,*::before,*::after{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+.main{
+    min-height:calc(100vh - 100px);
+    display: flex;
+}
+body{
+    min-height:100vh;
+}
+
+.sidebar{
+    min-width: 300px;
+    background-color: lightgray;
+    display:flex;
+}
+.content{
+    flex-grow:1;
+    display:flex;
+}
+
+.inner-text{
+    font-weight:700 ;
+    font-size:20px;
+    margin:auto;
+}
+header{
+    height:100px;
+    background-color: #aaa;
+    display:flex;
+   
+}
+
+@media only screen and (max-width:992px){
+   .main{
+    flex-direction: column-reverse;
+   }
+   .sidebar{
+    height:150px;
+   }
+}
